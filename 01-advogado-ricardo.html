@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dr. Ricardo Almeida | Advocacia Criminal | Defesa Especializada</title>
+  <meta name="description" content="Advocacia criminal especializada. Defesa em todas as fases do processo penal. Atendimento 24 horas. OAB/SC." />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      theme: { extend: {
+        colors: { 'noite': '#0F1419', 'grafite': '#1A2028', 'bronze': '#B8935A', 'bronze-claro': '#D4B27D', 'marfim': '#F5F1E8', 'cinza-sobrio': '#8B8B8B' },
+        fontFamily: { 'serif': ['Cormorant Garamond', 'Georgia', 'serif'], 'sans': ['Inter', 'system-ui', 'sans-serif'] },
+        animation: { 'fade-up': 'fadeUp 0.8s ease-out forwards' },
+        keyframes: { fadeUp: { '0%': { opacity: '0', transform: 'translateY(30px)' }, '100%': { opacity: '1', transform: 'translateY(0)' } } },
+      } },
+    };
+  </script>
+
+  <style>
+    body { font-family: 'Inter', sans-serif; background: #0F1419; color: #F5F1E8; }
+    .display { font-family: 'Cormorant Garamond', serif; font-weight: 500; letter-spacing: -0.02em; }
+    .linha-bronze { background: linear-gradient(90deg, transparent, #B8935A 50%, transparent); height: 1px; }
+    .num-roman { font-family: 'Cormorant Garamond', serif; font-weight: 400; color: #B8935A; font-style: italic; }
+    .bg-padrao { background-image: radial-gradient(ellipse 80% 50% at 50% 0%, rgba(184, 147, 90, 0.08), transparent 70%), linear-gradient(180deg, #0F1419 0%, #0F1419 100%); }
+    .btn-primary { background: #B8935A; color: #0F1419; transition: all 0.3s ease; }
+    .btn-primary:hover { background: #D4B27D; transform: translateY(-1px); box-shadow: 0 10px 30px -10px rgba(184, 147, 90, 0.5); }
+    .btn-ghost { border: 1px solid rgba(184, 147, 90, 0.4); color: #F5F1E8; transition: all 0.3s ease; }
+    .btn-ghost:hover { border-color: #B8935A; background: rgba(184, 147, 90, 0.08); }
+    .card-servico { transition: all 0.4s ease; border-left: 2px solid transparent; }
+    .card-servico:hover { border-left-color: #B8935A; transform: translateX(4px); }
+    .whatsapp-float { animation: pulse-soft 2.5s ease-in-out infinite; }
+    @keyframes pulse-soft { 0%, 100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.5); } 50% { box-shadow: 0 0 0 12px rgba(37, 211, 102, 0); } }
+    .stagger-1 { animation-delay: 0.1s; opacity: 0; }
+    .stagger-2 { animation-delay: 0.3s; opacity: 0; }
+
+    .retrato-wrap { position: relative; overflow: hidden; border-radius: 2px; background: linear-gradient(135deg, #1A2028, #0F1419); }
+    .retrato-wrap img { width: 100%; height: 100%; object-fit: cover; filter: grayscale(100%) contrast(1.1) brightness(0.85); }
+    .retrato-wrap::after { content: ''; position: absolute; inset: 0; background: linear-gradient(180deg, transparent 40%, rgba(15, 20, 25, 0.9) 100%); pointer-events: none; }
+    .retrato-wrap::before { content: ''; position: absolute; inset: 8px; border: 1px solid rgba(184, 147, 90, 0.4); z-index: 2; pointer-events: none; }
+  </style>
+</head>
+<body class="bg-padrao min-h-screen">
+
+  <header class="border-b border-bronze/20 backdrop-blur-sm bg-noite/80 sticky top-0 z-40">
+    <div class="max-w-6xl mx-auto px-6 py-5 flex items-center justify-between">
+      <div class="flex items-center gap-4">
+        <svg width="44" height="44" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-label="Logo Ricardo Almeida Advocacia">
+          <g fill="none" stroke="#B8935A" stroke-width="1.2">
+            <circle cx="32" cy="32" r="30"/>
+            <line x1="32" y1="14" x2="32" y2="50"/>
+            <line x1="18" y1="22" x2="46" y2="22"/>
+            <path d="M18 22 L14 32 L22 32 Z" fill="#B8935A" fill-opacity="0.15"/>
+            <path d="M46 22 L42 32 L50 32 Z" fill="#B8935A" fill-opacity="0.15"/>
+            <circle cx="32" cy="14" r="1.8" fill="#B8935A"/>
+            <circle cx="32" cy="50" r="1.8" fill="#B8935A"/>
+          </g>
+        </svg>
+        <div>
+          <p class="display text-marfim text-lg leading-none">Ricardo Almeida</p>
+          <p class="text-[10px] tracking-[0.2em] text-cinza-sobrio uppercase mt-1">Advocacia Criminal</p>
+        </div>
+      </div>
+      <a href="#contato" class="hidden md:inline-block text-sm tracking-wide text-marfim/80 hover:text-bronze transition-colors">
+        OAB/SC 00.000 · Atendimento 24h
+      </a>
+    </div>
+  </header>
+
+  <section class="relative overflow-hidden">
+    <div class="max-w-6xl mx-auto px-6 py-20 md:py-28">
+      <div class="grid md:grid-cols-12 gap-12 items-center">
+        <div class="md:col-span-7 animate-fade-up stagger-1">
+          <p class="text-bronze text-xs tracking-[0.3em] uppercase mb-6 flex items-center gap-3">
+            <span class="w-10 h-px bg-bronze"></span>
+            Defesa Criminal Especializada
+          </p>
+          <h1 class="display text-5xl md:text-7xl leading-[1.05] text-marfim mb-8">
+            Quando a sua <span class="italic text-bronze">liberdade</span><br>está em jogo,<br><span class="italic">cada hora</span> conta.
+          </h1>
+          <p class="text-lg md:text-xl text-marfim/70 leading-relaxed mb-10 max-w-2xl font-light">
+            Atuação firme em todas as fases do processo penal — do flagrante ao tribunal do júri. Atendimento sigiloso, 24 horas por dia, inclusive em finais de semana e feriados.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4">
+            <a href="https://wa.me/5548999999999?text=Olá,%20Dr.%20Ricardo.%20Preciso%20de%20orientação%20jurídica%20criminal." class="btn-primary px-8 py-4 text-sm tracking-[0.15em] uppercase font-medium inline-flex items-center justify-center gap-3">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+              Falar agora no WhatsApp
+            </a>
+            <a href="tel:+5548999999999" class="btn-ghost px-8 py-4 text-sm tracking-[0.15em] uppercase font-medium inline-flex items-center justify-center gap-3">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              Ligar agora
+            </a>
+          </div>
+          <p class="text-xs text-cinza-sobrio mt-6 tracking-wide">Primeira consulta avaliada · Sigilo absoluto garantido</p>
+        </div>
+
+        <div class="md:col-span-5 animate-fade-up stagger-2">
+          <div class="retrato-wrap aspect-[3/4]">
+            <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=600&q=80" alt="Dr. Ricardo Almeida" loading="eager" onerror="this.style.display='none'"/>
+            <div class="absolute bottom-0 left-0 right-0 p-6 z-10">
+              <p class="display text-xl text-marfim leading-tight">Dr. Ricardo Almeida</p>
+              <div class="w-10 h-px bg-bronze my-2"></div>
+              <p class="text-[10px] tracking-[0.25em] text-bronze uppercase">OAB/SC 00.000</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="border-y border-bronze/15 bg-grafite/30">
+    <div class="max-w-6xl mx-auto px-6 py-8">
+      <div class="grid md:grid-cols-3 gap-8 text-center md:text-left">
+        <div class="flex items-center justify-center md:justify-start gap-4">
+          <div class="w-12 h-12 border border-bronze/40 flex items-center justify-center flex-shrink-0 rounded-sm">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#B8935A" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><polyline points="12 7 12 12 15.5 14"/></svg>
+          </div>
+          <div><p class="text-marfim text-sm font-medium">Atendimento 24 horas</p><p class="text-cinza-sobrio text-xs mt-1">Inclusive finais de semana</p></div>
+        </div>
+        <div class="flex items-center justify-center md:justify-start gap-4">
+          <div class="w-12 h-12 border border-bronze/40 flex items-center justify-center flex-shrink-0 rounded-sm">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#B8935A" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-5.5-7-11a7 7 0 0 1 14 0c0 5.5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+          </div>
+          <div><p class="text-marfim text-sm font-medium">Atuação em todo o estado</p><p class="text-cinza-sobrio text-xs mt-1">Santa Catarina e adjacências</p></div>
+        </div>
+        <div class="flex items-center justify-center md:justify-start gap-4">
+          <div class="w-12 h-12 border border-bronze/40 flex items-center justify-center flex-shrink-0 rounded-sm">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#B8935A" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="11" width="16" height="10" rx="1.5"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/><circle cx="12" cy="16" r="1" fill="#B8935A"/></svg>
+          </div>
+          <div><p class="text-marfim text-sm font-medium">Sigilo profissional</p><p class="text-cinza-sobrio text-xs mt-1">Protegido por lei (Art. 7º EAOAB)</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="servicos" class="py-24 md:py-32">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="mb-16 max-w-2xl">
+        <p class="text-bronze text-xs tracking-[0.3em] uppercase mb-5 flex items-center gap-3"><span class="w-10 h-px bg-bronze"></span>Áreas de atuação</p>
+        <h2 class="display text-4xl md:text-5xl text-marfim leading-tight mb-6">Atuação técnica em todas as fases do <span class="italic text-bronze">processo penal</span>.</h2>
+        <p class="text-marfim/60 text-lg font-light leading-relaxed">Desde o primeiro contato com a autoridade policial até o trânsito em julgado, cada etapa exige estratégia e conhecimento específico.</p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-x-12 gap-y-10">
+        <div class="card-servico pl-6"><p class="num-roman text-2xl mb-2">I.</p><h3 class="display text-2xl text-marfim mb-3">Flagrante e Audiência de Custódia</h3><p class="text-marfim/60 leading-relaxed font-light">Atendimento imediato em delegacias e audiências de custódia. Pleito de relaxamento de prisão, liberdade provisória ou medidas cautelares alternativas.</p></div>
+        <div class="card-servico pl-6"><p class="num-roman text-2xl mb-2">II.</p><h3 class="display text-2xl text-marfim mb-3">Inquérito Policial</h3><p class="text-marfim/60 leading-relaxed font-light">Acompanhamento de investigações, requerimentos de diligências, oitivas e produção antecipada de provas em favor do investigado.</p></div>
+        <div class="card-servico pl-6"><p class="num-roman text-2xl mb-2">III.</p><h3 class="display text-2xl text-marfim mb-3">Ações Penais</h3><p class="text-marfim/60 leading-relaxed font-light">Defesa técnica em processos por crimes contra o patrimônio, contra a pessoa, tráfico de drogas, crimes de trânsito e demais tipos penais.</p></div>
+        <div class="card-servico pl-6"><p class="num-roman text-2xl mb-2">IV.</p><h3 class="display text-2xl text-marfim mb-3">Tribunal do Júri</h3><p class="text-marfim/60 leading-relaxed font-light">Defesa em crimes dolosos contra a vida. Sustentação em plenário, pronúncia, impronúncia e recursos em ambas as fases do procedimento.</p></div>
+        <div class="card-servico pl-6"><p class="num-roman text-2xl mb-2">V.</p><h3 class="display text-2xl text-marfim mb-3">Habeas Corpus</h3><p class="text-marfim/60 leading-relaxed font-light">Impetração de HC em todas as instâncias — TJ, STJ e STF. Trancamento de ação penal, relaxamento de prisão e revogação de medidas.</p></div>
+        <div class="card-servico pl-6"><p class="num-roman text-2xl mb-2">VI.</p><h3 class="display text-2xl text-marfim mb-3">Execução Penal</h3><p class="text-marfim/60 leading-relaxed font-light">Progressão de regime, livramento condicional, remição de pena, indulto, comutação e defesa em processos disciplinares na VEP.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="sobre" class="py-24 md:py-32 bg-grafite/30 border-y border-bronze/15">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="grid md:grid-cols-12 gap-12 items-center">
+        <div class="md:col-span-5">
+          <div class="retrato-wrap aspect-[3/4]">
+            <img src="https://images.unsplash.com/photo-1589994965851-a8f479c573a9?w=600&q=80" alt="Escritório de advocacia" loading="lazy" onerror="this.style.display='none'"/>
+            <div class="absolute bottom-0 left-0 right-0 p-6 z-10">
+              <p class="display text-xl text-marfim">Escritório Ricardo Almeida</p>
+              <p class="text-xs text-bronze tracking-widest uppercase mt-1">Florianópolis · SC</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="md:col-span-7">
+          <p class="text-bronze text-xs tracking-[0.3em] uppercase mb-5 flex items-center gap-3"><span class="w-10 h-px bg-bronze"></span>Sobre o escritório</p>
+          <h2 class="display text-4xl md:text-5xl text-marfim leading-tight mb-6">Mais de <span class="italic text-bronze">15 anos</span> dedicados exclusivamente à advocacia criminal.</h2>
+          <div class="space-y-5 text-marfim/70 leading-relaxed font-light text-lg">
+            <p>Bacharel em Direito pela UFSC e pós-graduado em Direito Penal e Processo Penal. Atuação contínua desde 2009, com centenas de processos acompanhados em todas as instâncias da Justiça Criminal brasileira.</p>
+            <p>O escritório é pautado por três princípios: <span class="text-bronze">rigor técnico</span>, <span class="text-bronze">discrição absoluta</span> e <span class="text-bronze">disponibilidade real</span>. Cada caso recebe atenção individualizada, estratégia construída sob medida e comunicação transparente com o cliente e seus familiares.</p>
+          </div>
+
+          <div class="grid grid-cols-3 gap-6 mt-10 pt-10 border-t border-bronze/20">
+            <div><p class="display text-4xl text-bronze">15+</p><p class="text-xs text-cinza-sobrio tracking-wider uppercase mt-2">Anos de atuação</p></div>
+            <div><p class="display text-4xl text-bronze">500+</p><p class="text-xs text-cinza-sobrio tracking-wider uppercase mt-2">Casos acompanhados</p></div>
+            <div><p class="display text-4xl text-bronze">24h</p><p class="text-xs text-cinza-sobrio tracking-wider uppercase mt-2">Disponibilidade</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contato" class="py-24 md:py-32">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <p class="text-bronze text-xs tracking-[0.3em] uppercase mb-6">— Contato direto —</p>
+      <h2 class="display text-4xl md:text-6xl text-marfim leading-tight mb-8">Precisa de orientação <span class="italic text-bronze">agora?</span></h2>
+      <p class="text-marfim/70 text-lg md:text-xl leading-relaxed mb-12 font-light max-w-2xl mx-auto">Situações criminais não esperam horário comercial. Fale diretamente pelo WhatsApp — resposta em minutos, sigilo garantido.</p>
+
+      <div class="flex flex-col sm:flex-row gap-4 justify-center mb-8">
+        <a href="https://wa.me/5548999999999?text=Olá,%20Dr.%20Ricardo.%20Preciso%20de%20orientação%20jurídica%20criminal." class="btn-primary px-10 py-5 text-sm tracking-[0.15em] uppercase font-medium inline-flex items-center justify-center gap-3">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+          Falar pelo WhatsApp
+        </a>
+        <a href="tel:+5548999999999" class="btn-ghost px-10 py-5 text-sm tracking-[0.15em] uppercase font-medium inline-flex items-center justify-center gap-3">(48) 99999-9999</a>
+      </div>
+
+      <div class="linha-bronze my-12 max-w-md mx-auto"></div>
+      <p class="text-cinza-sobrio text-sm leading-relaxed max-w-lg mx-auto font-light">Em conformidade com o Código de Ética da OAB. Esta página não configura oferta de serviços nem promessa de resultados. O contato inicial não estabelece relação contratual.</p>
+    </div>
+  </section>
+
+  <footer class="border-t border-bronze/15 py-10 bg-noite">
+    <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-4">
+      <div class="flex items-center gap-3">
+        <svg width="32" height="32" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+          <g fill="none" stroke="#B8935A" stroke-width="1.2"><circle cx="32" cy="32" r="30"/><line x1="32" y1="14" x2="32" y2="50"/><line x1="18" y1="22" x2="46" y2="22"/><path d="M18 22 L14 32 L22 32 Z" fill="#B8935A" fill-opacity="0.15"/><path d="M46 22 L42 32 L50 32 Z" fill="#B8935A" fill-opacity="0.15"/></g>
+        </svg>
+        <div><p class="display text-marfim text-sm">Ricardo Almeida Advocacia Criminal</p><p class="text-[10px] tracking-widest text-cinza-sobrio uppercase mt-0.5">OAB/SC 00.000</p></div>
+      </div>
+      <p class="text-xs text-cinza-sobrio tracking-wide">© 2026 — Todos os direitos reservados</p>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/5548999999999?text=Olá,%20Dr.%20Ricardo.%20Preciso%20de%20orientação%20jurídica%20criminal." class="whatsapp-float fixed bottom-6 right-6 z-50 w-14 h-14 rounded-full bg-[#25D366] flex items-center justify-center hover:scale-110 transition-transform shadow-lg" aria-label="Falar no WhatsApp">
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+  </a>
+</body>
+</html>
